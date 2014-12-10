@@ -1,10 +1,13 @@
 #!/bin/sh
 
 # Install Packages
-add-apt-repository -y ppa:brightbox/ruby-ng
+apt-get -y update
+apt-get install -y -q software-properties-common
+apt-add-repository -y ppa:brightbox/ruby-ng
 apt-get -y update
 apt-get install -y -q \
-    apt-get -y install ruby2.1
+    git \
+    ruby2.1
 
 # Install eb-deployer
 gem install specific_install
