@@ -6,6 +6,7 @@ apt-get install -y -q software-properties-common
 apt-add-repository -y ppa:brightbox/ruby-ng
 apt-get -y update
 apt-get install -y -q \
+    jq \
     git \
     ruby2.1
 
